@@ -20,8 +20,12 @@
     pointer-events: auto;
   }
   .mobile-menu__container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
     position: relative;
-    padding-left: 40px;
+    padding: 48px 15px 48px 40px;
   }
   .mobile-menu__button-close {
     position: absolute;
@@ -43,9 +47,7 @@
       fill: currentColor;
     }
   }
-  .mobile-menu__list {
-    padding-top: 48px;
-  }
+
   .mobile-menu__link {
     font-weight: 500;
     font-size: 40px;
@@ -61,13 +63,13 @@
       color: var(--accent-color);
     }
   }
-  .mobile-menu__contact-container{
+  .mobile-menu__contact-container {
     margin-top: auto;
   }
   .mobile-menu__item:not(:last-child) {
     margin-bottom: 32px;
   }
-  
+
   .mobile-menu__tel-link {
     font-weight: 500;
     font-size: 34px;
