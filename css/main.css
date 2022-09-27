@@ -10,7 +10,7 @@
   --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.join-button, .join-link, .clients-link, .team-link, .work-text {
+.join-button, .join-link, .clients-link, .team-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -739,42 +739,21 @@ button {
     padding: 25px 100px;
   }
 }
-.work-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (max-width: 768px) {
+  .work-section {
+    display: none;
+  }
 }
-
-.work-item:not(:last-child) {
-  margin-right: 30px;
-  border-radius: 4px;
+@media screen and (min-width: 768px) {
+  .work-section {
+    display: none;
+  }
 }
-
-.work-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  margin-bottom: 50px;
+@media screen and (min-width: 1200px) {
+  .work-section {
+    display: block;
+  }
 }
-
-.work-text {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  height: 70px;
-  width: 100%;
-  font-weight: 700;
-  line-height: 1.14;
-  text-transform: uppercase;
-  color: var(--background-color);
-  background: rgba(47, 48, 58, 0.8);
-}
-
-.work-thumb {
-  position: relative;
-}
-
 .team {
   background-color: var(--team-bg-color);
 }
