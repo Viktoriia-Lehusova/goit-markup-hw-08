@@ -1,5 +1,5 @@
 // Phone
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .work-section {
     display: none;
   }
@@ -15,7 +15,10 @@
 @media screen and (min-width: 1200px) {
   .work-section {
     display: block;
+    padding-bottom: 94px;
+    padding-top: 94px;
   }
+
   .work-list {
     display: flex;
   }
@@ -35,7 +38,9 @@
     bottom: 0;
     right: 0;
 
-    @extend %align;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     height: 70px;
     width: 100%;

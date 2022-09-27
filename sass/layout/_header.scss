@@ -1,5 +1,5 @@
 // Phone
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .header-navigation {
     display: none;
   }
@@ -37,19 +37,11 @@
     &-container {
       display: flex;
       align-items: center;
+      justify-content: center;
     }
     &-navigation {
       margin-left: 88px;
     }
-  }
-  .header-container {
-    display: flex;
-    justify-content: center;
-    padding-top: 0px;
-    padding-bottom: 0px;
-  }
-  .header-navigation {
-    display: block;
   }
 
   .site-nav {
@@ -138,11 +130,6 @@
     &-navigation {
       margin-left: 93px;
     }
-  }
-  .header-container {
-    display: flex;
-    align-items: baseline;
-    justify-content: center;
   }
   .auth-nav {
     display: flex;

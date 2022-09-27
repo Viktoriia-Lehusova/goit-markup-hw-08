@@ -1,6 +1,7 @@
 // Phone
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .features {
+    padding-bottom: 60px;
     padding-top: 60px;
   }
   .features-list {
@@ -19,7 +20,11 @@
     max-width: 450px;
     height: 120px;
     margin-bottom: 30px;
-    padding: 25px 190px;
+
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    text-align: center;
   }
   .features-subtitle {
     margin-bottom: 10px;
@@ -37,7 +42,8 @@
 // tablet
 @media screen and (min-width: 768px) {
   .features {
-    padding-top: 94px;
+    padding-bottom: 60px;
+    padding-top: 60px;
   }
   .features-list {
     display: flex;
@@ -79,6 +85,10 @@
 
 // desktop
 @media screen and (min-width: 1200px) {
+  .features {
+    padding-bottom: 0px;
+    padding-top: 94px;
+  }
   .features-list {
     display: flex;
   }
