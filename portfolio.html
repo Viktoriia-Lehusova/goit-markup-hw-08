@@ -31,6 +31,11 @@
             <li class="header-item"><a href="" class="header-link link">Контакти</a></li>
           </ul>
         </nav>
+        <button type="button" class="button-menu" data-menu-open>
+          <svg class="icon-burger" width="40" height="40">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
         <ul class="auth-nav list">
           <li class="item">
             <a href="mailto:info@devstudio.com" class="header-link link">
@@ -50,14 +55,61 @@
           </li>
         </ul>
       </div>
+      <!-- mobile-menu -->
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+          <button type="button" class="mobile-menu__button-close" data-menu-close>
+            <svg class="mobile-menu__icon-close" width="40" height="40">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu__list list">
+            <li class="mobile-menu__item item">
+              <a href="" class="mobile-menu__link link current">Студія</a>
+            </li>
+            <li class="mobile-menu__item item">
+              <a href="./portfolio.html" class="mobile-menu__link link">Портфоліо</a>
+            </li>
+            <li class="mobile-menu__item item">
+              <a href="" class="mobile-menu__link link">Контакти</a>
+            </li>
+          </ul>
+          <div class="mobile-menu__contact-container">
+            <ul class="mobile-menu__list-contact list">
+              <li class="mobile-menu__tel-item item">
+                <a href="tel:+380961111111" class="mobile-menu__tel-link link">+38 096 111 11 11</a>
+              </li>
+              <li class="mobile-menu__mail-item item">
+                <a href="mailto:info@devstudio.com" class="mobile-menu__mail-link link"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mobile-menu__social-list list">
+              <li class="mobile-menu__social-item item">
+                <a href="" class="mobile-menu__social-link link">Instagram</a>
+              </li>
+              <li mobile-menu__social-item item>
+                <a href="" class="mobile-menu__social-link link">Twitter</a>
+              </li>
+              <li mobile-menu__social-item item>
+                <a href="" class="mobile-menu__social-link link">Facebook</a>
+              </li>
+              <li mobile-menu__social-item item>
+                <a href="" class="mobile-menu__social-link linkedin link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </header>
 
-    <main>
-      <section class="portfolio">
+    <!-- <main> -->
+    <section class="portfolio">
         <div class="container">
           <h1 class="visually-hidden">Потртфоліо</h1>
-          <!-- filtr -->
-          <ul class="filtr list">
+    <!-- filtr -->
+    <ul class="filtr-list list">
             <li class="filtr-item">
               <button type="button" class="button portfolio-button">Усі</button>
             </li>
@@ -74,8 +126,8 @@
               <button type="button" class="button portfolio-button">Маркетинг</button>
             </li>
           </ul>
-          <!-- portfolio -->
-          <ul class="list portfolio-list">
+    <!-- portfolio -->
+    <ul class="list portfolio-list">
             <li class="portfolio-item">
               <a href="" class="portfolio-link link">
                 <div class="portfolio-thumb">
@@ -132,7 +184,7 @@
                       class="portfolio-img"
                       src="./images/portfolio1@1x-desktop.jpg"
                       alt="ноутбук з відкритим сайтом"
-                      width="370"
+                  
                     />
                   </picture>
 
@@ -205,7 +257,7 @@
                       class="portfolio-img"
                       src="./images/portfolio2@1x-desktop.jpg"
                       alt="два баскетболісти під час гри у баскетбол"
-                      width="370"
+                     
                     />
                   </picture>
 
@@ -280,7 +332,7 @@
                       class="portfolio-img"
                       src="./images/portfolio3@1x-desktop.jpg"
                       alt="логотип ресторану"
-                      width="370"
+                      
                     />
                   </picture>
 
@@ -353,7 +405,7 @@
                       class="portfolio-img"
                       src="./images/portfolio4@1x-desktop.jpg"
                       alt="навушники"
-                      width="370"
+                      
                     />
                   </picture>
 
@@ -426,7 +478,7 @@
                       class="portfolio-img"
                       src="./images/portfolio5@1x-desktop.jpg"
                       alt="дві коробки. перша біла друга коричнева"
-                      width="370"
+                      
                     />
                   </picture>
 
@@ -499,7 +551,7 @@
                       class="portfolio-img"
                       src="./images/portfolio6@1x-desktop.jpg"
                       alt="екран монітору"
-                      width="370"
+                      
                     />
                   </picture>
 
@@ -572,7 +624,7 @@
                       class="portfolio-img"
                       src="./images/portfolio7@1x-desktop.jpg"
                       alt="відкритий журнал з зображенням дівчат"
-                      width="370"
+                     
                     />
                   </picture>
 
@@ -645,7 +697,7 @@
                       class="portfolio-img"
                       src="./images/portfolio8@1x-desktop.jpg"
                       alt="лейба для одягу"
-                      width="370"
+                      
                     />
                   </picture>
 
@@ -720,7 +772,7 @@
                       class="portfolio-img"
                       src="./images/portfolio9@1x-desktop.jpg"
                       alt="відкритий ноутбук на столі"
-                      width="370"
+                     
                     />
                   </picture>
 
@@ -745,68 +797,73 @@
     <!-- футер -->
     <footer class="footer">
       <div class="container footer-container">
-        <div class="adress-container">
-          <a href="./index.html" lang="en" class="footer-logo"
-            ><span class="part-logo">Web</span>Studio</a
-          >
-          <address>
-            <ul class="adress-list list">
-              <li class="adress-item">
-                <a
-                  href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  class="adress"
-                >
-                  м. Київ, пр-т Лесі Українки, 26</a
-                >
+        <div class="footer-container__adress">
+          <div class="adress-container">
+            <a href="./index.html" lang="en" class="footer-logo"
+              ><span class="part-logo">Web</span>Studio</a
+            >
+            <address>
+              <ul class="adress-list list">
+                <li class="adress-item">
+                  <a
+                    href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="adress"
+                  >
+                    м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="adress-item">
+                  <a href="mailto:info@devstudio.com" class="adress-link mail"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="adress-item">
+                  <a href="tel:+380961111111" class="adress-link">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-join">
+            <h2 class="footer-text">Приєднуйтесь</h2>
+            <ul class="footer-list list">
+              <li class="item">
+                <a href="" class="join-link"
+                  ><svg class="svg" width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="adress-item">
-                <a href="mailto:info@devstudio.com" class="adress-link mail">info@devstudio.com</a>
+              <li class="item">
+                <a href="" class="join-link">
+                  <svg class="svg" width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="adress-item">
-                <a href="tel:+380961111111" class="adress-link">+38 096 111 11 11</a>
+              <li class="item">
+                <a href="" class="join-link">
+                  <svg class="svg" width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="item">
+                <a href="" class="join-link">
+                  <svg class="svg" width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
+          </div>
         </div>
-        <div class="footer-join">
-          <h2 class="footer-text">Приєднуйтесь</h2>
-          <ul class="footer-list list">
-            <li class="item">
-              <a href="" class="join-link"
-                ><svg class="svg" width="20" height="20">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="item">
-              <a href="" class="join-link">
-                <svg class="svg" width="20" height="20">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="item">
-              <a href="" class="join-link">
-                <svg class="svg" width="20" height="20">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="item">
-              <a href="" class="join-link">
-                <svg class="svg" width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+
         <div class="footer-input">
           <h2 class="footer-text">Підпишіться на розсилку</h2>
           <form class="footer-label">
-            <label>
+            <label class="join-label">
               <input required type="email" name="email" placeholder="E-mail" class="join-input" />
             </label>
             <button type="submit" class="button join-button">
@@ -819,5 +876,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
